@@ -64,3 +64,52 @@ faqItems.forEach(item => {
         closeBtn.style.display = 'none'
     });
 });
+
+//Timeline
+// Get all the boxes
+const boxes = document.querySelectorAll('.timeline-boxes');
+const displayText=document.querySelector(".timeline-text");
+const Text=[{
+    id: "1",
+    text: "Startups begin by filling out a basic form on Unstop, followed by a detailed questionnaire sent via email. The top 80 startups will be selected based on their submissions."
+},{
+    id: "2",
+    text: "Round 1 text. Startups begin by filling out a basic form on Unstop, followed by a detailed questionnaire sent via email." 
+},{
+    id: "3",
+    text: "Round 2 text. Startups begin by filling out a basic form on Unstop, followed by a detailed questionnaire sent via email."
+},{
+    id: "4",
+    text: "Round 3 text. Startups begin by filling out a basic form on Unstop, followed by a detailed questionnaire sent via email."
+},{
+id: "5",
+    text: "D day text. Startups begin by filling out a basic form on Unstop, followed by a detailed questionnaire sent via email."
+}];
+// Loop through each box
+boxes.forEach(box => {
+    box.addEventListener('mouseover', () => {
+        // Get the circle ID from the data attribute
+        const circleId = box.getAttribute('data-circle');
+        // Remove active class from all circles
+        document.querySelectorAll('.timeline-circle').forEach(circle => {
+            circle.classList.remove('active');
+        });
+        // Add active class to the corresponding circle
+        document.getElementById(circleId).classList.add('active');
+    });
+
+    box.addEventListener('mouseout', () => {
+        // Optionally remove the active class when the mouse leaves the box
+        const circleId = box.getAttribute('data-circle');
+        document.getElementById(circleId).classList.remove('active');
+    });
+    box.addEventListener('click',()=>{
+        let boxid=box.getAttribute('id');
+    Text.forEach((obj)=>{
+        if(boxid==obj.id){
+        displayText.textContent=obj.text;
+    }});
+    
+    });
+}
+);
