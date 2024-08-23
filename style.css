@@ -378,6 +378,7 @@ button:hover {
     align-items: center;
     color: #6E99FF;
     justify-content: center;
+    cursor: pointer;
 }
 
 .timeline-boxes-head {

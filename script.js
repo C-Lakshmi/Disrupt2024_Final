@@ -74,16 +74,16 @@ const Text=[{
     text: "Startups begin by filling out a basic form on Unstop, followed by a detailed questionnaire sent via email. The top 80 startups will be selected based on their submissions."
 },{
     id: "2",
-    text: "Round 1 text. Startups begin by filling out a basic form on Unstop, followed by a detailed questionnaire sent via email." 
+    text: "Startups receive tailored materials to help them identify their blocker problem. They are then matched with a mentor to develop a feasible solution plan." 
 },{
     id: "3",
-    text: "Round 2 text. Startups begin by filling out a basic form on Unstop, followed by a detailed questionnaire sent via email."
+    text: "Startups start executing their solution with guidance from their mentor. This round also includes multiple speaker sessions and workshops."
 },{
     id: "4",
-    text: "Round 3 text. Startups begin by filling out a basic form on Unstop, followed by a detailed questionnaire sent via email."
+    text: "The top 25 startups receive intensive training to refine their pitches through mock sessions with VC firms and personalized coaching."
 },{
 id: "5",
-    text: "D day text. Startups begin by filling out a basic form on Unstop, followed by a detailed questionnaire sent via email."
+    text: "Based on the previous rounds, teams will be selected to pitch their idea to the panel of judges, VCs and angel investors."
 }];
 // Loop through each box
 boxes.forEach(box => {
