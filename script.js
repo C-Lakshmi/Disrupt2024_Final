@@ -96,20 +96,17 @@ boxes.forEach(box => {
         });
         // Add active class to the corresponding circle
         document.getElementById(circleId).classList.add('active');
+        let boxid=box.getAttribute('id');
+        Text.forEach((obj)=>{
+            if(boxid==obj.id){
+            displayText.textContent=obj.text;
+        }});
     });
 
     box.addEventListener('mouseout', () => {
         // Optionally remove the active class when the mouse leaves the box
         const circleId = box.getAttribute('data-circle');
         document.getElementById(circleId).classList.remove('active');
-    });
-    box.addEventListener('click',()=>{
-        let boxid=box.getAttribute('id');
-    Text.forEach((obj)=>{
-        if(boxid==obj.id){
-        displayText.textContent=obj.text;
-    }});
-    
     });
 }
 );
