@@ -19,6 +19,9 @@ body {
     margin: 0;
     /* color: #fff; */
 }
+html{
+    scroll-behavior: smooth;
+}
 .hover{
     cursor: pointer;
 }

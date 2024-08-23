@@ -113,3 +113,26 @@ boxes.forEach(box => {
     });
 }
 );
+const Timelineclick=document.querySelectorAll(".click-timeline");
+const contactclick=document.querySelectorAll(".click-contact");
+const aboutclick=document.querySelectorAll(".click-about");
+const homeclick=document.querySelectorAll(".click-home");
+function timeline(){
+    document.getElementById('timeline-scroll').scrollIntoView({ behavior: 'smooth' });
+    //console.log('clicked');
+}
+function contact(){
+    document.getElementById('footer-scroll').scrollIntoView({ behavior: 'smooth' });
+}
+function about(){
+    document.getElementById('about-scroll').scrollIntoView({ behavior: 'smooth' });
+}
+//console.log(aboutclick);
+for(let i=0;i<2;i++){
+Timelineclick[i].addEventListener('click',timeline);
+contactclick[i].addEventListener('click',contact);
+aboutclick[i].addEventListener('click',about);
+homeclick[i].addEventListener('click',()=>{
+    document.getElementsByTagName('body')[0].scrollIntoView({ behavior: 'smooth' });
+});
+}
